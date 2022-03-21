@@ -41,7 +41,7 @@ export class AppDenyComponent implements OnInit {
     this.managerService.approveOrDeny(pendingReimbursement).subscribe( response => {
     console.log(response);
     this.resolvedReimbursement = response;
-      
+    this.router.navigate(['/mhome'])
     });
     
   }
