@@ -1,0 +1,26 @@
+<div><button class="btn" type="button" routerLink="/eHome">Home</button></div>
+
+<div class="container pt-5 my-5">
+    <table class="table table-hover m-3">
+        <thead class="table-success">
+            <tr>
+                <th>Resolved Reimbursement ID</th>
+                <th>Reimbursement ID</th>
+                <th>Reimbursement Amount</th>
+                <th>Request Approved</th>
+                <th>Date of Request</th>
+                <th>Date Resolved</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let resolvedReimbursement of empResolvedReimbursements">
+                <td>{{ resolvedReimbursement.resolvedReimbursementId }}</td>
+                <td>{{ resolvedReimbursement.reimbursementId }}</td>
+                <td>{{ resolvedReimbursement.reimbursementAmount }}</td>
+                <td>{{ resolvedReimbursement.requestApproved | approveDeny }}</td>
+                <td>{{ resolvedReimbursement.dateOfRequest }}</td>
+                <td>{{ resolvedReimbursement.dateResolved }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

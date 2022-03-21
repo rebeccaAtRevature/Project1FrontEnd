@@ -1,0 +1,26 @@
+<div><button class="btn" type="button" routerLink="/eHome">Home</button></div>
+<form #myFormTemplate="ngForm" class="card m-5" (ngSubmit)="addReimbursement()">
+    <div class="card-header">Add a Reimbursement Request</div>
+    <div class="card-body">
+    
+            <div class="mb-3 mt-3">
+              <label for="amount" class="form-label"> Reimbursement Amount:</label>
+              <input 
+                type="text" 
+                class="form-control" 
+                id="amount" 
+                placeholder="Enter Reimbursement Amount" 
+                name="amount"
+                #myReimbursementAmount="ngModel"
+                [(ngModel)]="newReimbursement.reimbursementAmount">
+                <div *ngIf="!myReimbursementAmount.valid && myReimbursementAmount.touched" class="small text-danger">*Reimbursement amount is required!</div>
+            </div>
+            
+            
+    </div>
+    <div class="card-footer">
+        <button type="submit" class="btn btn-light" >
+            ADD
+        </button>
+    </div>
+</form>

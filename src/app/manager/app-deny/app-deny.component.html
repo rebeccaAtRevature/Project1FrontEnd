@@ -1,0 +1,26 @@
+
+<div class="container m-5">
+    <form >
+        <div class="card-header">Please choose one option: </div>
+
+        <div class="card-body">
+
+            
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio1" name="optradio" [(ngModel)]="pendingReimbursement.requestApproved" value=true checked>Approve
+                <label class="form-check-label" for="radio1"></label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio2" name="optradio" [(ngModel)]="pendingReimbursement.requestApproved" value=false>Deny
+                <label class="form-check-label" for="radio2"></label>
+              </div>
+            
+
+        </div>
+        <div class="card-footer">
+            <button type="button" (click)="makeCall()" class="btn">
+                Submit
+            </button>
+        </div>
+    </form>
+</div>
