@@ -26,6 +26,7 @@
                 <th>Requesting Employee ID</th>
                 <th>Reimbursement Amount</th>
                 <th>Date of Request</th>
+                <th>Proof of Expense</th>
             </tr>
         </thead>
         <tbody>
@@ -34,6 +35,9 @@
                 <td>{{ pendingReimbursement.requestingEmployeeId }}</td>
                 <td>{{ pendingReimbursement.reimbursementAmount }}</td>
                 <td>{{ pendingReimbursement.dateOfRequest }}</td>
+                <td><img class="img-fluid" [src]="pendingReimbursement.reimbursementImage" width="100px" height="80px" object-fit:
+                    cover></td>
+
             </tr>
         </tbody>
     </table>

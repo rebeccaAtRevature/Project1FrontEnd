@@ -7,4 +7,5 @@ export interface Reimbursement {
 	requestApproved?: boolean;
 	dateOfRequest?: string;
     dateResolved?: string;
+	reimbursementImage?: any;
 }

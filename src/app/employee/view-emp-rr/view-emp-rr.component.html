@@ -4,7 +4,6 @@
     <table class="table table-hover m-3">
         <thead class="table-success">
             <tr>
-                <th>Resolved Reimbursement ID</th>
                 <th>Reimbursement ID</th>
                 <th>Reimbursement Amount</th>
                 <th>Request Approved</th>
@@ -14,7 +13,6 @@
         </thead>
         <tbody>
             <tr *ngFor="let resolvedReimbursement of empResolvedReimbursements">
-                <td>{{ resolvedReimbursement.resolvedReimbursementId }}</td>
                 <td>{{ resolvedReimbursement.reimbursementId }}</td>
                 <td>{{ resolvedReimbursement.reimbursementAmount }}</td>
                 <td>{{ resolvedReimbursement.requestApproved | approveDeny }}</td>

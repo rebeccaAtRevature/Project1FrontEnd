@@ -31,7 +31,7 @@ export class UpdateEmpComponent implements OnInit {
       console.log(response);
       this.updatedEmployee = response;
       this.eAuthService.storeUser(response);
-      this.router.navigate(['/ehome'])
+      this.router.navigate(['/eHome'])
     })
   }
 

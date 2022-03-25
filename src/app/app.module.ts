@@ -52,7 +52,8 @@ import { PendingNotPendingPipe } from './manager/view-emp-r/pendingNotPendingPip
     ViewEmpComponent,
     UpdateEmpComponent,
     ApproveDenyPipe,
-    PendingNotPendingPipe
+    PendingNotPendingPipe,
+
   ],
   imports: [
     BrowserModule,

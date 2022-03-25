@@ -16,7 +16,8 @@ export class ViewPrComponent implements OnInit {
     requestingEmployeeId: 0,
     reimbursementAmount: 0,
     reimbursementPending: true,
-    dateOfRequest: ""
+    dateOfRequest: "",
+    reimbursementImage: ""
   }
   errorMessage: string = "";
   constructor(private managerService: ManagerService, private router: Router) { }
@@ -34,6 +35,8 @@ export class ViewPrComponent implements OnInit {
       this.pendingReimbursement.requestingEmployeeId = response.requestingEmployeeId;
       this.pendingReimbursement.reimbursementAmount = response.reimbursementAmount;
       this.pendingReimbursement.dateOfRequest = response.dateOfRequest;
+      this.pendingReimbursement.reimbursementImage = response.reimbursementImage.imageData;
+      console.log(this.pendingReimbursement.reimbursementImage);
       
       if( this.pendingReimbursement.requestingEmployeeId == 0 ){
         // invalid credentials
