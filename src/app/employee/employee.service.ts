@@ -12,18 +12,18 @@ export class EmployeeService {
   constructor(private http: HttpClient) { }
 
   submitRequest(reimbursement: FormData): Observable<Reimbursement>{
-    return this.http.post<Reimbursement>(`http://localhost:4444/api/reimbursements`, reimbursement);
+    return this.http.post<Reimbursement>(`http://ec2-3-83-47-123.compute-1.amazonaws.com:9999/api/reimbursements`, reimbursement);
   }
   viewEmpPendingRequests(employeeId: number): Observable<Reimbursement[]>{
-    return this.http.get<Reimbursement[]>(`http://localhost:4444/api/p-reimbursements/${employeeId}`);
+    return this.http.get<Reimbursement[]>(`http://ec2-3-83-47-123.compute-1.amazonaws.com:9999/api/p-reimbursements/${employeeId}`);
   }
   viewEmpResolvedRequests(employeeId: number): Observable<Reimbursement[]>{
-    return this.http.get<Reimbursement[]>(`http://localhost:4444/api/r-reimbursements/${employeeId}`);
+    return this.http.get<Reimbursement[]>(`http://ec2-3-83-47-123.compute-1.amazonaws.com:9999/api/r-reimbursements/${employeeId}`);
   }
   viewEmployee(employeeId: number): Observable<Employee>{
-    return this.http.get<Employee>(`http://localhost:4444/api/employees/${employeeId}`);
+    return this.http.get<Employee>(`http://ec2-3-83-47-123.compute-1.amazonaws.com:9999/api/employees/${employeeId}`);
   }
   updateEmployee(employee: Employee): Observable<Employee>{
-    return this.http.put<Employee>(`http://localhost:4444/api/employees`, employee);
+    return this.http.put<Employee>(`http://ec2-3-83-47-123.compute-1.amazonaws.com:9999/api/employees`, employee);
   }
 }
