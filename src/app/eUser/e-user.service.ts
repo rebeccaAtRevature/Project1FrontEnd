@@ -14,7 +14,7 @@ export class EUserService {
 
   validateEUser(newEUser: EUser): Observable<Employee>{
     // Make http get request
-    let employee = this.http.get<Employee>(`http://ec2-3-83-47-123.compute-1.amazonaws.com:9999/${newEUser.username}/${newEUser.password}`);
+    let employee = this.http.get<Employee>(`http://localhost:4444/api/${newEUser.username}/${newEUser.password}`);
    
     return employee;
   }

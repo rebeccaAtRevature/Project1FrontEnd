@@ -12,22 +12,22 @@ export class ManagerService {
   constructor(private http: HttpClient) { }
 
   readPendingRequest(reimbursementId: number): Observable<Reimbursement>{
-    return this.http.get<Reimbursement>(`http://ec2-3-83-47-123.compute-1.amazonaws.com:9999/api/p-reimbursement/${reimbursementId}`);
+    return this.http.get<Reimbursement>(`http://localhost:4444/api/p-reimbursement/${reimbursementId}`);
   }
   approveOrDeny(reimbursement: Reimbursement): Observable<Reimbursement>{
-    return this.http.post<Reimbursement>(`http://ec2-3-83-47-123.compute-1.amazonaws.com:9999/api/reimbursement`, reimbursement);
+    return this.http.post<Reimbursement>(`http://localhost:4444/api/reimbursement`, reimbursement);
   }
   viewAllPendingRequests(): Observable<Reimbursement[]>{
-    return this.http.get<Reimbursement[]>(`http://ec2-3-83-47-123.compute-1.amazonaws.com:9999/api/p-reimbursements`);
+    return this.http.get<Reimbursement[]>(`http://localhost:4444/api/p-reimbursements`);
   }
   viewAllResolvedRequests(): Observable<Reimbursement[]>{
-    return this.http.get<Reimbursement[]>(`http://ec2-3-83-47-123.compute-1.amazonaws.com:9999/api/r-reimbursements`);
+    return this.http.get<Reimbursement[]>(`http://localhost:4444/api/r-reimbursements`);
   }
   viewAllRequests(employeeId: number): Observable<Reimbursement[]>{
-    return this.http.get<Reimbursement[]>(`http://ec2-3-83-47-123.compute-1.amazonaws.com:9999/api/reimbursements/${employeeId}`);
+    return this.http.get<Reimbursement[]>(`http://localhost:4444/api/reimbursements/${employeeId}`);
   }
   viewAllEmployees(): Observable<Employee[]>{
-    return this.http.get<Employee[]>(`http://ec2-3-83-47-123.compute-1.amazonaws.com:9999/api/employees`);
+    return this.http.get<Employee[]>(`http://localhost:4444/api/employees`);
   }
 
 }
