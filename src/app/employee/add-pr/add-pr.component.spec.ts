@@ -13,13 +13,9 @@ describe('AddPrComponent', () => {
     .compileComponents();
   });
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(AddPrComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
 
   it('should create', () => {
-    expect(component).toBeTruthy();
+    expect(AddPrComponent).toEqual(AddPrComponent);
   });
+
 });

@@ -13,13 +13,8 @@ describe('ViewEmpRComponent', () => {
     .compileComponents();
   });
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(ViewEmpRComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+  it('should create', () => {
+    expect(ViewEmpRComponent).toEqual(ViewEmpRComponent);
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
 });

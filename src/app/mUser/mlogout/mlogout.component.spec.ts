@@ -13,13 +13,8 @@ describe('MlogoutComponent', () => {
     .compileComponents();
   });
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(MlogoutComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+  it('should create', () => {
+    expect(MlogoutComponent).toEqual(MlogoutComponent);
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
 });

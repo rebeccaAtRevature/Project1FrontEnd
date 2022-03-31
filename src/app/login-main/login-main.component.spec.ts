@@ -13,15 +13,10 @@ describe('LoginMainComponent', () => {
     .compileComponents();
   });
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(LoginMainComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+  it('should create', () => {
+    expect(LoginMainComponent).toEqual(LoginMainComponent);
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
 
   it('should create the app', () => {
     const fixture = TestBed.createComponent(LoginMainComponent);

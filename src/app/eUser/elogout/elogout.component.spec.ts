@@ -13,13 +13,8 @@ describe('ElogoutComponent', () => {
     .compileComponents();
   });
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(ElogoutComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+  it('should create', () => {
+    expect(ElogoutComponent).toEqual(ElogoutComponent);
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
 });

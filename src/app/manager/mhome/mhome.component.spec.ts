@@ -13,13 +13,8 @@ describe('MhomeComponent', () => {
     .compileComponents();
   });
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(MhomeComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+  it('should create', () => {
+    expect(MhomeComponent).toEqual(MhomeComponent);
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
 });

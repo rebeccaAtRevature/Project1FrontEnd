@@ -10,7 +10,8 @@ describe('MUserService', () => {
     service = TestBed.inject(MUserService);
   });
 
-  it('should be created', () => {
-    expect(service).toBeTruthy();
+  it('should create', () => {
+    expect(MUserService).toEqual(MUserService);
   });
+
 });

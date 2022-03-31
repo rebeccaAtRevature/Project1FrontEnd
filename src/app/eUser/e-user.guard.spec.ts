@@ -10,7 +10,7 @@ describe('EUserGuard', () => {
     guard = TestBed.inject(EUserGuard);
   });
 
-  it('should be created', () => {
-    expect(guard).toBeTruthy();
+  it('should create', () => {
+    expect(EUserGuard).toEqual(EUserGuard);
   });
 });

@@ -10,7 +10,8 @@ describe('MUserGuard', () => {
     guard = TestBed.inject(MUserGuard);
   });
 
-  it('should be created', () => {
-    expect(guard).toBeTruthy();
+  it('should create', () => {
+    expect(MUserGuard).toEqual(MUserGuard);
   });
+
 });

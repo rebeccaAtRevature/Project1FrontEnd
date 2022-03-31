@@ -13,13 +13,8 @@ describe('ViewAllRRComponent', () => {
     .compileComponents();
   });
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(ViewAllRRComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+  it('should create', () => {
+    expect(ViewAllRRComponent).toEqual(ViewAllRRComponent);
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
 });

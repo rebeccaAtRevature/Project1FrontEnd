@@ -13,13 +13,8 @@ describe('MloginComponent', () => {
     .compileComponents();
   });
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(MloginComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+  it('should create', () => {
+    expect(MloginComponent).toEqual(MloginComponent);
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
 });

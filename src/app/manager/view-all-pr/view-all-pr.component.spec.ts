@@ -13,13 +13,9 @@ describe('ViewAllPRComponent', () => {
     .compileComponents();
   });
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(ViewAllPRComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
 
   it('should create', () => {
-    expect(component).toBeTruthy();
+    expect(ViewAllPRComponent).toEqual(ViewAllPRComponent);
   });
+
 });

@@ -13,13 +13,8 @@ describe('AppDenyComponent', () => {
     .compileComponents();
   });
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(AppDenyComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+  it('should create', () => {
+    expect(AppDenyComponent).toEqual(AppDenyComponent);
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
 });

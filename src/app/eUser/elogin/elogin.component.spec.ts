@@ -13,15 +13,10 @@ describe('EloginComponent', () => {
     .compileComponents();
   });
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(EloginComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+  it('should create', () => {
+    expect(EloginComponent).toEqual(EloginComponent);
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
 
   it('should create the app', () => {
     const fixture = TestBed.createComponent(EloginComponent);

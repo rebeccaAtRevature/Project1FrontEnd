@@ -13,15 +13,10 @@ describe('EhomeComponent', () => {
     .compileComponents();
   });
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(EhomeComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+  it('should create', () => {
+    expect(EhomeComponent).toEqual(EhomeComponent);
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
 
   it('should create the app', () => {
     const fixture = TestBed.createComponent(EhomeComponent);
